@@ -1,66 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://4kwallpapers.com/images/wallpapers/peaky-blinders-3840x2160-14924.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: cyan;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+        }
+        .container{
+            margin: auto;
+            width: 30%;
+            border: 1px solid white;
+            padding:0px 80px;
+            margin-top: 10px;
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+        }
+        .input-form p{
+            margin-bottom: 5px;
+        }
+
+        .input-form input{
+            background-color: inherit;
+            width: 80%;
+            padding: 10px;
+            color: white;
+            outline: auto;
+            border-radius: 5px;
+        }
+
+        .radio-form{
+            margin-top: 10px;
+        }
+
+        .radio-form p,input{
+            display: inline;
+        }
+
+        .radio-form p{
+            margin-right: 190px;
+        }
+
+        .date input{
+            background-color: inherit;
+            color: cyan;
+            margin-left: 160px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .file-form input{
+            padding: 5px;
+            margin-left: 110px;
+            border-radius: 5px;
+        }
+        
+
+        .dropdown-form{
+            margin-top: 10px;
+        }
+        
+        .dropdown-form p,select{
+            display: inline;
+            
+        }
+
+        
+        select{
+            background-color: inherit;
+            color: cyan;
+            margin-left: 220px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        select option{
+            background-color: inherit;
+            color:black;
+        }
+
+        .submit-form{
+            margin-left: 30%;
+        }
+
+        .submit-form button{
+            padding: 10px;
+            width: 50%;
+            background-color: #00264a;
+            border-radius: 5px;
+            color: cyan;
+            cursor: pointer;
+            align-items: center;
+            font-size: 20px;
+            
+            
+
+        }
+
+
+    </style>
 </head>
+
 <body>
-    
-    <form action="./login.html">
-        <h1>Register</h1>
-        <p>
-            First Name <input type="text" placeholder="Enter first name">
-        </p>
-        <p>
-            Last Name <input type="text" placeholder="Enter last name">
-        </p>
-        <p>
-            Email ID <input type="email" placeholder="Enter email">
-        </p>
-        <p>
-            Password <input type="password" placeholder="Enter password">
-        </p>
-        <p>
-            Confirm Password <input type="password" placeholder="confirm password">
-        </p>
-        <p>
-            Mobile No <input type="number" placeholder="Enter mobile no">
-        </p>
-        <p>
-            Gender <br>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female
-        </p>
-        <p>
-            Date of Birth:
-            <input type="date">
-        </p>
-        <p>
-            Profile Pic 
-            <input type="file">
-        </p>
-        <p>
-            Qualification <br>
-            <input type="checkbox"> SSC
-            <input type="checkbox"> Inter
-            <input type="checkbox"> Diploma
-            <input type="checkbox"> Btech
-            <input type="checkbox"> Mtech
-        </p>
-        <p>
-            City:
-            <select name="dropdown">
-                <option >Select Option</option>
-                <option>Vijayawada</option>
-                <option>Hyderabad</option>
-                <option>Vizag</option>
-                <option>Banglore</option>
-            </select>
-        </p>
-        <p>
-            <button type="submit">Register</button>
-        </p>
-    </form>
+    <div class="container">
+        <form action="./login.html">
+            <h1>Register</h1>
+            <div class="input-form">
+                <p>
+                    First Name
+                </p>
+                <input type="text">
+            </div>
+            <div class="input-form">
+                <p>
+                    Last Name
+                </p>
+                <input type="text" >
+            </div>
+            <div class="input-form">
+                <p>
+                    Email ID
+                </p>
+                <input type="email" >
+            </div>
+            <div class="input-form">
+                <p>
+                    Password
+                </p>
+                <input type="password" >
+            </div>
+            <div class="input-form">
+                <p>
+                    Confirm Password
+                </p>
+                <input type="password" >
+            </div>
+            <div class="input-form">
+                <p>
+                    Mobile No
+                </p>
+                <input type="text" >
+            </div>
+            <div class="radio-form">
+                <p>
+                    Gender
+                </p>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </div>
+            <div class="date">
+                <p>
+
+                    Date of Birth
+                    <input type="date">
+                </p>
+            </div>
+            <div class="file-form">
+                <p>
+                    Profile Pic
+                    <input type="file">
+                </p>
+            </div>
+            <div class="select-form">
+                <p>
+                    Qualification
+                </p>
+                <input type="checkbox"> SSC
+                <input type="checkbox"> Inter
+                <input type="checkbox"> Diploma
+                <input type="checkbox"> Btech
+                <input type="checkbox"> Mtech
+            </div>
+            <div class="dropdown-form">
+                <p>
+                    City
+                </p>
+                <select name="dropdown">
+                    <option>Select Option</option>
+                    <option>Vijayawada</option>
+                    <option>Hyderabad</option>
+                    <option>Vizag</option>
+                    <option>Banglore</option>
+                </select>
+            </div>
+            <div class="submit-form">
+                <p>
+                    <button type="submit">Register</button>
+                </p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
